@@ -193,7 +193,7 @@ Global channel use redis as a default persistent storage, you can change it with
 var globalChannel = require('pomeloGlobalChannel');
 var mysqlGlobalChannelManager = require('./mysqlGlobalChannelManager');
 
-app.use(globalChannel, {globalChannel: {
+app.use(globalChannel, {GlobalChannel: {
   url : 'redis://127.0.0.1:6379', 
   channelManager: mysqlGlobalChannelManager
 }});
