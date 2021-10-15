@@ -5,9 +5,9 @@
 module.exports.redisChannel =
 {
     family      : 4,           // 4 (IPv4) or 6 (IPv6)
-    password : 'gameMirror',
+    password : 'GameMirror',
     options     : {},
-    host        : '192.168.31.132',
-    port        : 6800,
+    url        : 'redis://192.168.31.91:6801',
+    legacyMode: true,
     db          : 5      // optinal, from 0 to 15 with default redis configure
 };

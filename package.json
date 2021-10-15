@@ -1,22 +1,18 @@
 {
   "name": "pomeloGlobalChannel",
-  "version": "2.0.8",
+  "version": "4.0.2",
   "private": false,
+
+
   "dependencies":
   {
-    "redis": "^2.6.x",
-    "bluebird": "^3.0.2",
-    "co":"*",
-    "lodash":"*",
-    "pomelo-logger": "0.1.5"
+    "redis": "^4.0.0-rc.3",
+    "lodash":"*"
   },
 
   "devDependencies":
   {
-    "eslint": "^2.5.0",
-    "mocha": "^2.3.2",
-    "gulp": "*",
-    "gulp-eslint": "*",
-    "gulp-strip-debug": "*"
+    "eslint": "*",
+    "mocha": "*"
   }
 }

@@ -24,10 +24,9 @@ npm install pomeloGlobalChannel
 ```
 var globalChannel = require('pomeloGlobalChannel');
 
-app.use(globalChannel, {globalChannel: {
-  host: '127.0.0.1',
-  port: 6379,
-  db: '0'       // optinal, from 0 to 15 with default redis configure
+app.use(globalChannel, {GlobalChannel: {
+  url : 'redis://127.0.0.1:6379', 
+  db: 5      // optinal, from 0 to 15 with default redis configure
 }});
 
 ```
@@ -189,14 +188,13 @@ Remove user from channel.
 ##Notice
 
 Global channel use redis as a default persistent storage, you can change it with your own implementation.
-
+自定义管理
 ```
 var globalChannel = require('pomeloGlobalChannel');
 var mysqlGlobalChannelManager = require('./mysqlGlobalChannelManager');
 
 app.use(globalChannel, {globalChannel: {
-  host: '127.0.0.1',
-  port: 6379,
+  url : 'redis://127.0.0.1:6379', 
   channelManager: mysqlGlobalChannelManager
 }});
 
